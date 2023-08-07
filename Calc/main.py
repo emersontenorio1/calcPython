@@ -54,7 +54,6 @@ class Calc:
     def on_button_click(self, value):
         current_text = self.screen_numbers.get()
 
-        # Se o campo estiver exibindo "0", substitui pelo valor do botão pressionado
         if current_text == "0":
             self.screen_numbers.delete(0, 'end')
             self.screen_numbers.insert('end', value)
